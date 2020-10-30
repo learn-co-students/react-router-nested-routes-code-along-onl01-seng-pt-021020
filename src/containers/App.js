@@ -30,3 +30,12 @@ class App extends Component {
 }
 
 export default App;
+
+//Notice what is happening on the second Route.
+//When rendering a component through a Route with the render prop, the function accepts an argument, routerProps.
+//When the path matches the URL, the Route will call the function inside render and pass in the current information available about the route, including the URL path that caused the Route to render.
+//This is not possible with the regular component prop on Routes we've seen before.
+
+
+//All JSX wrapped within Router can use Routes, including the JSX from any child components.
+//In our case, that is all of our components.
